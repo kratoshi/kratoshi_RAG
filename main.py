@@ -20,6 +20,7 @@
 # embs = embedder.embed_texts(texts)
 # print(embs.shape)
 
+from src.retriever.retriever import RAGRetriever
 from src.embeddings.embedder import TextEmbedder
 from src.utils.document_processor import DocumentProcessor
 from src.retriever.faiss_index import FaissVectorStore
@@ -35,8 +36,9 @@ embeddings = embedder.embed_texts([c.text for c in chunks])
 store = FaissVectorStore(embedding_dim=embeddings.shape[1])
 store.add_embeddings(embeddings, chunks)
 
-query_vec = embedder.embed_query("machine learning")
-results = store.search(query_vec, top_k=3)
+retriever = RAGRetriever(embedder, store)
 
-for chunk, score in results:
-    print(score, chunk.text[:100])
+result = retriever.retrieve("What is the role of UNDAC?")
+
+print(result["context"][:500])
+print(result["sources"])
