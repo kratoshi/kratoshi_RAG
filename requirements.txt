@@ -1,0 +1,6 @@
+torch
+sentence-transformers
+faiss-cpu
+fastapi
+uvicorn
+numpy==1.26.4
