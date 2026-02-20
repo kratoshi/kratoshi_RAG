@@ -18,7 +18,7 @@ class TextEmbedder:
             texts,
             batch_size=batch_size,
             convert_to_numpy=True,
-            normalize_embeddings=True,  
+            normalize_embeddings=True,
             show_progress_bar=False,
         )
         return embeddings

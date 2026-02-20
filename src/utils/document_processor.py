@@ -22,7 +22,7 @@ class DocumentProcessor:
         self.chunk_overlap = chunk_overlap
 
     def load_txt(self, file_path: str) -> str:
-        """Load a text file."""
+        #Load a text file
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"{file_path} not found")
 
@@ -30,7 +30,7 @@ class DocumentProcessor:
             return f.read()
 
     def chunk_text(self, text: str, source: str) -> List[DocumentChunk]:
-        """Split text into overlapping chunks."""
+        #Split text into overlapping chunks
         chunks = []
         start = 0
         text_length = len(text)
