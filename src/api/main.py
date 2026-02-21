@@ -12,7 +12,7 @@ from src.generator.generator import RAGGenerator
 # Initialize App
 app = FastAPI(title="Kratoshi_RAG")
 
-# Load Embedder, Retriever and Generator
+# Load Embedder, Document Processor and Generator
 embedder = TextEmbedder()
 processor = DocumentProcessor()
 generator = RAGGenerator()
