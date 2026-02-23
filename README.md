@@ -2,7 +2,7 @@
 
 A production-ready Retrieval-Augmented Generation (RAG) pipeline built with PyTorch, FAISS, and FastAPI.
 
-This project demonstrates how to design, build, and deploy a scalable semantic search + LLM generation system — the core pattern behind modern AI assistants and enterprise knowledge bots.
+This project demonstrates how to design, build, and deploy a scalable semantic search + LLM generation system, which is the core pattern behind modern AI assistants and enterprise knowledge bots.
 
 ---
 
