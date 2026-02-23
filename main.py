@@ -43,13 +43,13 @@
 # print(result["context"][:500])
 # print(result["sources"])
 
-from src.generator.generator import RAGGenerator
+# from src.generator.generator import RAGGenerator
 
-gen = RAGGenerator()
+# gen = RAGGenerator()
 
-context = "Machine learning is a field of AI that allows systems to learn from data."
-query = "What is AI?"
+# context = "Machine learning is a field of AI that allows systems to learn from data."
+# query = "What is AI?"
 
-result = gen.generate(query, context)
+# result = gen.generate(query, context)
 
-print(result["answer"])
+# print(result["answer"])
