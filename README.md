@@ -1,8 +1,8 @@
 # 🧠 RAG Question Answering System (PyTorch + FAISS)
 
-A production-ready Retrieval-Augmented Generation (RAG) pipeline built with PyTorch, FAISS, and FastAPI.
+A Retrieval-Augmented Generation (RAG) pipeline built with PyTorch, FAISS, and FastAPI.
 
-This project demonstrates how to design, build, and deploy a scalable semantic search + LLM generation system, which is the core pattern behind modern AI assistants and enterprise knowledge bots.
+This project demonstrates the designing, building, and containerization of a scalable semantic search + LLM generation system, which is the core pattern behind modern AI assistants and enterprise knowledge bots.
 
 ---
 
@@ -14,7 +14,6 @@ This project demonstrates how to design, build, and deploy a scalable semantic s
 * 💬 Retrieval-augmented generation
 * ⚡ FastAPI inference service
 * 🐳 Fully containerized with Docker
-* 🧪 Modular, production-style codebase
 
 ---
 
